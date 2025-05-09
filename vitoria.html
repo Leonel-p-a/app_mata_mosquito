@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fim de jogo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="estilo.css">
+
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        button#botaoReiniciar {
+            margin-right: 10px;
+        }
+
+        button#voltarPaginaInicial {
+            margin-left: 10px;            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <img src="imagens/vitoria.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="d-flex justify-content-center">
+                    <button id="botaoReiniciar" type="button" class="btn btn-dark btn-lg">Reiniciar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("botaoReiniciar").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
