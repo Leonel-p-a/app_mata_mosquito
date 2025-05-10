@@ -1,6 +1,7 @@
 body {
     background-image: url(imagens/bg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 html {
@@ -47,4 +48,11 @@ html {
 .cronometro {
     font-size: 20px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-size: auto;
+    }
+    
 }
